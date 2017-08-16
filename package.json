@@ -1,0 +1,23 @@
+{
+  "name": "mynuxt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bulma": "^0.5.1",
+    "hover.css": "^2.2.0",
+    "node-sass": "^4.5.3",
+    "nuxt": "^1.0.0-rc4",
+    "sass-loader": "^6.0.6",
+    "vue-style-loader": "^3.0.1"
+  }
+}

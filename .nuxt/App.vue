@@ -11,12 +11,16 @@ import NuxtLoading from './components/nuxt-loading.vue'
 
 let layouts = {
 
-  "_default": () => import('./layouts/default.vue'  /* webpackChunkName: "layouts/default" */).then(m => m.default || m)
+  "_default": () => import('../layouts/default.vue'  /* webpackChunkName: "layouts/default" */).then(m => m.default || m),
+
+  "_headerAndFooter": () => import('../layouts/headerAndFooter.vue'  /* webpackChunkName: "layouts/headerAndFooter" */).then(m => m.default || m),
+
+  "_parag": () => import('../layouts/parag.vue'  /* webpackChunkName: "layouts/parag" */).then(m => m.default || m)
 
 }
 
 export default {
-  head: {"meta":[{"charset":"utf-8"},{"http-equiv":"X-UA-Compatible","content":"IE=edge"}],"css":["~/node_modules/hover.css/css/hover-min.css","~/node_modules/bulma/css/bulma.css","~/HTML_design/libs/fancybox/jquery.fancybox.css","~/HTML_design/libs/owl-carousel/assets/owl.carousel.css","~/HTML_design/style.css","~/assets/css/style.css"],"build":{"extractCSS":true},"link":[],"style":[],"script":[]},
+  head: {"meta":[{"charset":"utf-8"},{"http-equiv":"X-UA-Compatible","content":"IE=edge"}],"link":[],"style":[],"script":[]},
   data: () => ({
     layout: null,
     layoutName: ''

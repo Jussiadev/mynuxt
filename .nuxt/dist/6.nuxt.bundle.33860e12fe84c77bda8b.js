@@ -1,2 +1,0 @@
-webpackJsonp([6],{146:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var r=t(190),l=t(17),u=l(null,r.a,null,null,null);n.default=u.exports},190:function(e,n,t){"use strict";var r=function(){var e=this,n=e.$createElement;return(e._self._c||n)("h1",[e._v("/promo/295/2")])},l=[],u={render:r,staticRenderFns:l};n.a=u}});
-//# sourceMappingURL=6.nuxt.bundle.33860e12fe84c77bda8b.js.map

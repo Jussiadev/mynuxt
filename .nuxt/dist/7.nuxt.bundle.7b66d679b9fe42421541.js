@@ -1,2 +1,0 @@
-webpackJsonp([7],{142:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var u=n(185),r=n(17),l=r(null,u.a,null,null,null);t.default=l.exports},185:function(e,t,n){"use strict";var u=function(){var e=this,t=e.$createElement;return(e._self._c||t)("h1",[e._v("About us")])},r=[],l={render:u,staticRenderFns:r};t.a=l}});
-//# sourceMappingURL=7.nuxt.bundle.7b66d679b9fe42421541.js.map

@@ -3,15 +3,16 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _3f8630c0 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
-const _23227996 = () => import('../pages/promotions/index.vue' /* webpackChunkName: "pages/promotions" */).then(m => m.default || m)
-const _2fd3c97e = () => import('../pages/posts.vue' /* webpackChunkName: "pages/posts" */).then(m => m.default || m)
-const _508c82d1 = () => import('../pages/brands/index.vue' /* webpackChunkName: "pages/brands" */).then(m => m.default || m)
-const _1fce55fb = () => import('../pages/about.vue' /* webpackChunkName: "pages/about" */).then(m => m.default || m)
-const _106fee8e = () => import('../pages/promo/_category/index.vue' /* webpackChunkName: "pages/promo-category" */).then(m => m.default || m)
-const _0f6f8999 = () => import('../pages/brands/_brand.vue' /* webpackChunkName: "pages/brands-brand" */).then(m => m.default || m)
-const _0c63e246 = () => import('../pages/promotions/_id.vue' /* webpackChunkName: "pages/promotions-id" */).then(m => m.default || m)
-const _78a43c76 = () => import('../pages/promo/_category/_id.vue' /* webpackChunkName: "pages/promo-category-id" */).then(m => m.default || m)
+const _2f64232f = () => import('../pages/index.vue' /* webpackChunkName: "pages/" */).then(m => m.default || m)
+const _588f4a72 = () => import('../pages/index/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _b2677534 = () => import('../pages/promotions/index.vue' /* webpackChunkName: "pages/promotions" */).then(m => m.default || m)
+const _5017e4a0 = () => import('../pages/posts.vue' /* webpackChunkName: "pages/posts" */).then(m => m.default || m)
+const _251cc582 = () => import('../pages/brands/index.vue' /* webpackChunkName: "pages/brands" */).then(m => m.default || m)
+const _0fac486a = () => import('../pages/about.vue' /* webpackChunkName: "pages/about" */).then(m => m.default || m)
+const _33d122fd = () => import('../pages/promo/_category/index.vue' /* webpackChunkName: "pages/promo-category" */).then(m => m.default || m)
+const _6630c5f0 = () => import('../pages/brands/_brand.vue' /* webpackChunkName: "pages/brands-brand" */).then(m => m.default || m)
+const _294f2d64 = () => import('../pages/promotions/_id.vue' /* webpackChunkName: "pages/promotions-id" */).then(m => m.default || m)
+const _4255c0a5 = () => import('../pages/promo/_category/_id.vue' /* webpackChunkName: "pages/promo-category-id" */).then(m => m.default || m)
 
 
 
@@ -49,47 +50,53 @@ export function createRouter () {
     routes: [
 		{
 			path: "/",
-			component: _3f8630c0,
-			name: "index"
+			component: _2f64232f,
+			children: [
+				{
+					path: "",
+					component: _588f4a72,
+					name: "index"
+				}
+			]
 		},
 		{
 			path: "/promotions",
-			component: _23227996,
+			component: _b2677534,
 			name: "promotions"
 		},
 		{
 			path: "/posts",
-			component: _2fd3c97e,
+			component: _5017e4a0,
 			name: "posts"
 		},
 		{
 			path: "/brands",
-			component: _508c82d1,
+			component: _251cc582,
 			name: "brands"
 		},
 		{
 			path: "/about",
-			component: _1fce55fb,
+			component: _0fac486a,
 			name: "about"
 		},
 		{
 			path: "/promo/:category?",
-			component: _106fee8e,
+			component: _33d122fd,
 			name: "promo-category"
 		},
 		{
 			path: "/brands/:brand",
-			component: _0f6f8999,
+			component: _6630c5f0,
 			name: "brands-brand"
 		},
 		{
 			path: "/promotions/:id",
-			component: _0c63e246,
+			component: _294f2d64,
 			name: "promotions-id"
 		},
 		{
 			path: "/promo/:category?/:id",
-			component: _78a43c76,
+			component: _4255c0a5,
 			name: "promo-category-id"
 		}
     ],
